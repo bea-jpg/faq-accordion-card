@@ -1,0 +1,157 @@
+:root {
+    /* Text */
+    --dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+
+    /* Background gradient */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* Text */
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+
+    /* Font */
+    --font-family: 'Kumbh Sans', sans-serif;
+    --weight-regular: 400;
+    --weight-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+    font-family: var(--font-family);
+}
+
+/* Card */
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: end;
+
+    width: 900px;
+
+    box-shadow: 3px 3px 10px;
+
+    margin-bottom: 40px;
+
+}
+
+/* Card images */
+
+.images {
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-position: -600px -300px;
+
+    background-repeat: no-repeat;
+}
+
+.overflow-hidden-image {
+    overflow-x: clip;
+}
+
+.woman-image {
+    position: relative;
+    top: -90px;
+    right: 90px;
+}
+
+.box-image {
+    position: relative;
+
+    z-index: 1;
+    left: -95px;
+    top: 230px;
+}
+
+/* FAQ section */
+
+.text {
+    width: 50%;
+    padding: 30px 60px 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: var(--very-dark-grayish-blue);
+    font-weight: var(--weight-regular);
+    font-size: 0.9rem;
+}
+
+h4:hover {
+    color: var(--soft-red);
+    cursor: pointer;
+}
+
+.selected-h4 {
+    color: var(--dark-desaturated-blue);
+    font-weight: var(--weight-bold);
+}
+
+.question {
+    margin: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text img {
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.rotated {
+    transform: rotate(180deg);
+    transition: all .4s;
+}
+
+hr {
+    border: solid 1px var(--light-grayish-blue);
+}
+
+.answer {
+    color: var(--dark-grayish-blue);
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+/* Attribution */
+
+.attribution {
+    color: var(--light-grayish-blue);
+}
+
+a {
+    color: #F47B56;
+}
+
+a:hover {
+    color: #A1482D;
+    text-decoration: none;
+}
