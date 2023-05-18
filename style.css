@@ -48,7 +48,7 @@ body {
 
     width: 900px;
 
-    box-shadow: 3px 3px 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 
     margin-bottom: 40px;
 
@@ -154,4 +154,37 @@ a {
 a:hover {
     color: #A1482D;
     text-decoration: none;
+}
+
+/* Mobile */
+
+@media screen and (max-width:990px){
+    .card {
+        flex-direction: column;
+        height: 550px;
+        width: 95%;
+        margin-top: 120px;
+    }
+
+    .images {
+        background-image: url('images/bg-pattern-mobile.svg');
+        background-position: 60px 170px;
+    }
+
+    .woman-image{
+        width: 250px;
+        top: -50px;
+        left: 50px;
+    }
+
+    .box-image {
+        width: 100px;
+        left: 45px;
+        top: 122px;
+    }
+
+    .text {
+        width: 100%;
+    }
+
 }
